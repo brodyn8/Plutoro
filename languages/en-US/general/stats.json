@@ -1,0 +1,17 @@
+{
+    "DESCRIPTION": "Shows the bot stats!",
+    "USAGE": "{{prefix}}stats",
+    "EXAMPLES": "{{prefix}}stats",
+    "COUNTS_TITLE": "• __Statistics__",
+    "COUNTS_CONTENT": "`Servers: {{servers}}`\n`Users: {{users}}`",
+    "VERSIONS_TITLE": "• __Using__",
+    "RAM_TITLE": "• __RAM__",
+    "ONLINE_TITLE": "• __Online__",
+    "ONLINE_CONTENT": "Online for `{{time}}`",
+    "MUSIC_TITLE": "• __Music__",
+    "MUSIC_CONTENT": "Playing music on `{{count}}` servers",
+    "CREDITS_TITLE": ":heart: • __Credits__",
+    "CREDITS_CONTENT": "{{donators}}",
+    "LINKS_TITLE": "• __Links__",
+    "MADE": "by Brodster#8025"
+}

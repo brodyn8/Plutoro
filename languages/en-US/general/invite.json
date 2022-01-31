@@ -1,0 +1,12 @@
+{
+    "DESCRIPTION": "Shows Plutoro's links!",
+    "USAGE": "{{prefix}}invite (copy)",
+    "EXAMPLES": "{{prefix}}invite\n{{prefix}}invite copy",
+    "LINKS": "Plutoro links",
+    "TIP": "Send `{{prefix}}invite copy` to be able to copy the invite link!",
+    "ADD": "Invite me",
+    "VOTE": "Vote for me",
+    "SUPPORT": "Get Support",
+    "DASHBOARD": "Dashboard",
+    "WEBSITE": "Website"
+}

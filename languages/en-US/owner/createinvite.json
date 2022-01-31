@@ -1,0 +1,5 @@
+{
+  "INVALID_ID": "Client ID must be a string of numbers.",
+  "NO_ID": "You must provide a client ID.\n*E.g.* `911112774678118461`",
+  "INVALID_PERMISSIONS": "Permissions must be a string of numbers"
+}

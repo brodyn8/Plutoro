@@ -1,0 +1,8 @@
+{
+    "DESCRIPTION": "Affiche les informations sur le dépôt Github d'Plutoro !",
+    "USAGE": "{{prefix}}github",
+    "EXAMPLES": "{{prefix}}github",
+    "CLICK_HERE": "Cliquez ici pour accéder au GitHub d'Plutoro",
+    "LANGUAGE": "Langue de programmation",
+    "OWNER": "Propriétaire du GitHub d'Plutoro"
+}

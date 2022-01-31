@@ -1,0 +1,6 @@
+root: ./
+title: 'Plutoro'
+description: 'Plutoro is a powerful feature-packed discord bot for every need in a server!'
+structure:
+    readme: ./README.md
+    summary: ./docs/SUMMARY.md

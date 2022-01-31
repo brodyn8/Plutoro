@@ -1,0 +1,9 @@
+{
+    "DESCRIPTION": "Claim your daily credits!",
+    "USAGE": "{{prefix}}daily",
+    "EXAMPLES": "{{prefix}}daily",
+    "COOLDOWN": "You have to wait {{time}} before collecting again!",
+    "AWARD": "Come back tomorrow to claim again!",
+    "SALARY": "Daily",
+    "SALARY_CONTENT": "You've gained {{won}} credits!"
+}

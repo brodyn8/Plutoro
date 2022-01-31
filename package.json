@@ -1,0 +1,130 @@
+{
+    "name": "plutoro",
+    "version": "2.4.0",
+    "description": "Plutoro is a powerful feature-packed discord bot for every need in a server!",
+    "main": "index.js",
+    "scripts": {
+        "start": "npx node index.js",
+        "lint": "eslint . --ext .js",
+        "testcfg": "node scripts/verify-config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/brodyn8/Plutoro.git"
+    },
+    "author": "brodyn8",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/brodyn8/Plutoro/issues"
+    },
+    "homepage": "https://github.com/brodyn8/Plutoro#readme",
+    "dependencies": {
+        "@discord-player/extractor": "^3.0.0",
+        "@discordjs/opus": "^0.5.0",
+        "@discordjs/voice": "^0.8.0",
+        "@k3rn31p4nic/google-translate-api": "github:k3rn31p4nic/google-translate-api",
+        "@sentry/node": "6.3.6",
+        "@sindresorhus/slugify": "^1.1.0",
+        "amethyste-api": "github:Androz2091/amethyste-api",
+        "ascii-table": "0.0.9",
+        "autoprefixer": "^10.4.2",
+        "blague.xyz": "^2.0.4",
+        "btoa": "^1.2.1",
+        "canvacord": "^5.1.0",
+        "canvas": "^2.6.1",
+        "chalk": "^4.1.0",
+        "colors-generator": "^0.3.4",
+        "cron": "^1.7.2",
+        "datatables.net": "^1.11.4",
+        "dblapi.js": "^2.3.0",
+        "discord-backup": "^2.1.19",
+        "discord-canvas": "^1.3.2",
+        "discord-giveaways": "^5.1.0",
+        "discord-paginationembed": "^2.1.0",
+        "discord-player": "^5.2.0",
+        "discord.js": "^13.6.0",
+        "ejs": "^3.1.3",
+        "eve": "^0.5.4",
+        "express": "^4.17.1",
+        "express-session": "^1.17.0",
+        "figlet": "^1.5.0",
+        "fortnite": "^4.3.2",
+        "fullcalendar": "^5.10.1",
+        "gamedig": "^3.0.0",
+        "glob": "^7.2.0",
+        "grunt": "^1.4.1",
+        "i18next": "^20.2.2",
+        "i18next-node-fs-backend": "^2.1.3",
+        "ip": "^1.1.5",
+        "jqlite": "^0.2.42",
+        "jquery": "^3.6.0",
+        "js-string-cleaner": "^1.0.3",
+        "jsdom": "^19.0.0",
+        "load-grunt-tasks": "^5.1.0",
+        "lyrics-finder": "^21.7.0",
+        "markdown-it": "^12.3.2",
+        "markdown-table": "2.0.0",
+        "matchdep": "^2.0.0",
+        "mathjs": "^9.0.0",
+        "md5": "^2.2.1",
+        "moment": "^2.26.0",
+        "mongodb": "^4.3.1",
+        "mongoose": "^5.9.25",
+        "ms": "^2.1.3",
+        "node": "^17.4.0",
+        "node-fetch": "2.6.7",
+        "phantomjs-prebuilt": "^2.1.16",
+        "postcss": "^8.4.5",
+        "replace-in-file": "^6.3.2",
+        "shelljs": "^0.8.5",
+        "string-sanitizer": "^1.1.1",
+        "time-grunt": "^2.0.0",
+        "top.gg": "^2.3.2",
+        "undici": "^4.12.2",
+        "webpack": "^5.67.0",
+        "webpage": "^0.3.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.5.0"
+    },
+    "eslintConfig": {
+        "env": {
+            "commonjs": true,
+            "es2020": true,
+            "node": true
+        },
+        "extends": "eslint:recommended",
+        "globals": {
+            "Atomics": "readonly",
+            "SharedArrayBuffer": "readonly"
+        },
+        "parserOptions": {
+            "ecmaVersion": 2020
+        },
+        "rules": {
+            "prefer-const": [
+                "error"
+            ],
+            "indent": [
+                "error",
+                "tab",
+                {
+                    "SwitchCase": 1
+                }
+            ],
+            "quotes": [
+                "error",
+                "double"
+            ],
+            "semi": [
+                "error",
+                "always"
+            ],
+            "linebreak-style": 0,
+            "require-atomic-updates": 0
+        }
+    },
+    "eslintIgnore": [
+        "dashboard/public"
+    ]
+}

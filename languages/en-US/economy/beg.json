@@ -1,0 +1,8 @@
+{
+    "DESCRIPTION": "Beg for money!",
+    "USAGE": "{{prefix}}beg",
+    "EXAMPLES": "{{prefix}}beg",
+    "AWARD": "Great job begging for credits!",
+    "SALARY": "Beg",
+    "SALARY_CONTENT": "People gave you {{won}} credits!"
+}

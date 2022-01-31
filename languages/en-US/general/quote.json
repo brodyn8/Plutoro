@@ -1,0 +1,8 @@
+{
+    "DESCRIPTION": "Quote a message in the channel!",
+    "USAGE": "{{prefix}}quote [messageID] [channel]",
+    "EXAMPLES": "{{prefix}}quote 372474333378904064\n{{prefix}}quote 372474333378904064 372474333378904064\n{{prefix}}quote 372474333378904064 #blabla",
+    "NO_MESSAGE_ID": "No message has this ID.",
+    "NO_CHANNEL_ID": "No channel has this ID.",
+    "MISSING_ID": "Please enter a valid message ID to quote!"
+}

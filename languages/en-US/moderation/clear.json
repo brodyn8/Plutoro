@@ -1,0 +1,11 @@
+{
+    "DESCRIPTION": "Quickly delete multiple messages!",
+    "USAGE": "{{prefix}}clear [number-of-messages] (@member)",
+    "EXAMPLES": "{{prefix}}clear 10\n{{prefix}}clear 10 @Brodster#8025",
+    "MISSING_AMOUNT": "You must specify a number of messages to delete!",
+    "ALL_CONFIRM": "All the channel messages will be deleted! To confirm type `confirm`",
+    "CHANNEL_CLEARED": "Channel cleared!",
+    "CLEARED": "**{{amount}}** were messages deleted!",
+    "CLEARED_MEMBER": "**{{amount}}** messages of **{{username}}** were deleted!",
+    "OVER_LIMIT": "You cannot clear more than **100** messages! *For safety reasons*"
+}
