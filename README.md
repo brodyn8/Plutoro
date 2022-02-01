@@ -1,5 +1,5 @@
 # ━**Plutoro**
-Plutoro is a powerful feature-packed discord bot for every need in a server!
+Upgrade your Discord server! - Advanced Moderation - Powerful Case Logging - Custom Commands - Competitive Economy - Multiple Languages
 
 *Prefix* **|** `-`
 

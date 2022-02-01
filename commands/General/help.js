@@ -96,6 +96,9 @@ class Help extends Command {
 				if(command.help.category === "Owner" && message.author.id !== this.client.config.owner.id){
 					return;
 				}
+        if(command.help.category === "NSFW" && !message.channel.nsfw){
+					return;
+				}
 				categories.push(command.help.category);
 			}
 		});

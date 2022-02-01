@@ -64,6 +64,7 @@
 		"moderation": "<:moderation_category:934927736433172510>",
 		"music": "<:music_category:934928575281365012>",
 		"owner": "<:owner_category:934929718397009951>",
-		"custom": "<:custom_category:934928577609224232>"
+		"custom": "<:custom_category:934928577609224232>",
+    "nsfw": "<:trash_category:937888093791461427>"
 	}
 }

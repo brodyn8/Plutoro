@@ -40,7 +40,7 @@ class Clear extends Command {
 			return message.error("moderation/clear:MISSING_AMOUNT");
 		}
 
-    if(amount > "100"){
+    if(amount > 100){
       return message.error("moderation/clear:OVER_LIMIT");
     }
 

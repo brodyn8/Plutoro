@@ -39,7 +39,7 @@ module.exports = {
 			const invite = await channel.createInvite({ maxAge: 0 }).catch(() => {});
 			return invite ? invite.url : null;
 		} else {
-			return "https://invite.plutoro.com/";
+			return "https://plutoro.com/invite";
 		}
 	},
 
