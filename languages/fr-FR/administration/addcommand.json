@@ -5,5 +5,5 @@
     "MISSING_NAME": "Entrez un nom de commande!",
     "MISSING_ANSWER": "Entrez une réponse à la commande!",
     "SUCCESS": "Commande **{{prefix}}{{commandName}}** ajoutée!",
-    "TOO_MANY": "You already have **10** custom commands!"
+    "TOO_MANY": "You have **exeeded** the limit of custom commands!"
 }
