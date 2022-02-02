@@ -30,7 +30,7 @@ module.exports = {
       dbl.webhook.on('vote', async vote => {
         const dUser = await client.users.fetch(vote.user);
         const member = await client.findOrCreateMember({ id: vote.user, guildID: client.config.support.id });
-        member.money = member.money + 100;
+        member.money = member.money + 1000;
         member.save();
         dUser.send(client.translate("misc:VOTE_DM", {
           user: dUser.tag

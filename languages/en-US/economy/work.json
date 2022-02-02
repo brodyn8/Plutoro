@@ -3,9 +3,9 @@
     "USAGE": "{{prefix}}work",
     "EXAMPLES": "{{prefix}}work",
     "COOLDOWN": "You have to wait {{time}} before working again!",
-    "AWARD": "Complete the word AWARD to win 200 bonus credits!",
+    "AWARD": "Complete the word AWARD to win 1000 bonus credits!",
     "SALARY": "Salary",
     "SALARY_CONTENT": "You've gained {{won}} credits!",
     "STREAK": "Streak",
-    "STREAK_CONTENT": "🎉 You've won 200 bonus credits!"
+    "STREAK_CONTENT": "🎉 You've won 1000 bonus credits!"
 }

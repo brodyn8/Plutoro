@@ -3,24 +3,26 @@
         "name": "en-US",
         "nativeName": "English",
         "moment": "en",
-        "defaultMomentFormat": "Do MMMM YYYY",
+        "defaultMomentFormat": "LL",
         "default": true,
         "aliases": [
             "English",
-            "english",
             "en",
-            "en_us"
+            "en-us",
+            "en_us",
+            "en_US"
         ]
     },
     {
         "name": "fr-FR",
         "nativeName": "Français",
-        "defaultMomentFormat": "Do MMMM YYYY",
+        "defaultMomentFormat": "LL",
         "moment": "fr",
         "default": false,
         "aliases": [
             "French",
-            "french",
+            "français",
+            "francais",
             "fr",
             "fr_fr"
         ]
@@ -28,12 +30,11 @@
     {
         "name": "es-ES",
         "nativeName": "Español",
-        "defaultMomentFormat": "MMM Do, YYYY",
+        "defaultMomentFormat": "LL",
         "moment": "es",
         "default": false,
         "aliases": [
             "Spanish",
-            "spanish",
             "es",
             "es_es"
         ]

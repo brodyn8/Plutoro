@@ -13,7 +13,7 @@ module.exports = class {
 		const guildOwner = await this.client.users.fetch(guild.ownerID).catch(() => {});
 
 		const userData = await this.client.findOrCreateUser({ id: guild.ownerID });
-		/*if(!userData.achievements.invite.achieved){
+		if(!userData.achievements.invite.achieved){
 			userData.achievements.invite.progress.now += 1;
 			userData.achievements.invite.achieved = true;
 			messageOptions.files = [
@@ -24,7 +24,7 @@ module.exports = class {
 			];
 			userData.markModified("achievements.invite");
 			await userData.save();
-    }*/
+    }
 
 		const messageOptions = new Discord.MessageEmbed()
 			.setAuthor("Thank you for adding me to "+guild.name+"!", guild.iconURL())

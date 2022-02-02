@@ -56,7 +56,7 @@ class Ban extends Command {
 				return message.error("moderation/ban:MISSING_PERM");
 			}
 		}
-        
+  
 		await user.send(message.translate("moderation/ban:BANNED_DM", {
 			username: user.tag,
 			server: message.guild.name,

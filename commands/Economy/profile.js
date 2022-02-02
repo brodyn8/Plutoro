@@ -53,6 +53,7 @@ class Profile extends Command {
 			globalMoney+=memberData.bankSold;
 		});
 
+    const attachment = new Discord.MessageAttachment(await userData.getAchievements(), "achievements.png")
 		const profileEmbed = new Discord.MessageEmbed()
 			.setAuthor(message.translate("economy/profile:TITLE", {
 				username: member.user.tag
@@ -83,8 +84,8 @@ class Profile extends Command {
 			.setFooter(data.config.embed.footer) // Sets the footer of the embed
 			.setTimestamp();
 
-		message.channel.send({ embeds: [profileEmbed] }); // Send the embed in the current channel
-    //files: [{ attachments: await userData.getAchievements(), name: "achievements.png" }]
+		message.channel.send({ embeds: [profileEmbed], files: [attachment] }); // Send the embed in the current channel
+
 	}
 
 }

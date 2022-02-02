@@ -25,7 +25,7 @@ class Birthdate extends Command {
 		}
 
 		const tArgs = date.split("/");
-		const [day, month, year] = tArgs;
+		const [month, day, year] = tArgs;
 		if(!day || !month || !year){
 			return message.error("economy/birthdate:INVALID_DATE");
 		}
