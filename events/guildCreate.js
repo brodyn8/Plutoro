@@ -16,17 +16,17 @@ module.exports = class {
 		if(!userData.achievements.invite.achieved){
 			userData.achievements.invite.progress.now += 1;
 			userData.achievements.invite.achieved = true;
-			messageOptions.files = [
+			/*messageOptions.files = [
 				{
 					name: "unlocked.png",
 					attachment: "./assets/img/achievements/achievement_unlocked7.png"
 				}
-			];
+      ];*/
 			userData.markModified("achievements.invite");
 			await userData.save();
     }
 
-		const messageOptions = new Discord.MessageEmbed()
+    const messageOptions = new Discord.MessageEmbed()
 			.setAuthor("Thank you for adding me to "+guild.name+"!", guild.iconURL())
 			.setDescription("Here is some useful information:")
       .addField("**Getting Started**", "You can use the [dashboard](https://dashboard.plutoro.com) to change settings or view the [documentation](https://docs.plutoro.com) for more help! To configure me, type `"+this.client.config.prefix+"help` and look at the administration commands!\nTo change the language, type `"+this.client.config.prefix+"setlang [language]`.")
@@ -35,6 +35,7 @@ module.exports = class {
 			.setFooter(this.client.config.embed.footer)
       .setThumbnail(this.client.user.displayAvatarURL({ size: 512, dynamic: true, format: "png" }))
 			.setTimestamp();
+
     if (guild.systemChannel) {
             guild.systemChannel.send({ embeds: [messageOptions] }).catch(() => {});
         }
