@@ -56,7 +56,7 @@ class Work extends Command {
 			this.client.customEmojis.letters.r,
 			this.client.customEmojis.letters.d
 		];
-		let won = 2000;
+		let won = 1000;
 
 		if(data.memberData.workStreak >= 5){
 			won += 1000;

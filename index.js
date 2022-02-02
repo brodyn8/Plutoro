@@ -74,5 +74,5 @@ client.on("disconnect", () => client.logger.log("Bot is disconnecting...", "warn
 
 // if there is an unhandledRejection, log them
 process.on("unhandledRejection", (err) => {
-	console.error(err);
+	//console.error(err);
 });
