@@ -3,7 +3,7 @@
     "USAGE": "{{prefix}}mute [@user] [time]",
     "EXAMPLES": "{{prefix}}mute @Brodster#8025 10m Spam",
     "MISSING_MEMBER": "Veuillez préciser un utilisateur valide à mute !",
-    "MUTED_DM": "Bonjour {{username}},\nVous venez d'être mute de **{{server}}** par **{{moderator}}** for **{{time}}** pour **{{reason}}** !",
-    "MUTED": "**{{username}}** est mute pendant **{{time}}** pour **{{reason}}** !",
+    "MUTED_DM": "Bonjour {{username}},\nVous venez d'être mute de **{{server}}** par **{{moderator}}** for **{{time}}** pour **`{{reason}}`** !",
+    "MUTED": "**{{username}}** est mute pendant **{{time}}** pour **`{{reason}}`** !",
     "CASE": "Mute | Cas #{{count}}"
 }

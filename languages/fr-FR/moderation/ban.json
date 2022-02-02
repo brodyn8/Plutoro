@@ -7,7 +7,7 @@
     "SUPERIOR": "Vous ne pouvez pas sanctionner un membre avec un rôle supérieur (ou égal) au votre !",
     "ALREADY_BANNED": "**{{username}}** est déjà banni !",
     "MISSING_PERM": "Une erreur est survenue... Vérifiez que j'ai bien les permissions de bannir ce membre et réessayez !",
-    "BANNED_DM": "Bonjour {{username}},\nVous venez d'être banni de **{{server}}** par **{{moderator}}** pour **{{reason}}** !",
-    "BANNED": "**{{username}}** vient d'être banni de **{{server}}** par **{{moderator}}** pour **{{reason}}** !",
+    "BANNED_DM": "Bonjour {{username}},\nVous venez d'être banni de **{{server}}** par **{{moderator}}** pour **`{{reason}}`** !",
+    "BANNED": "**{{username}}** vient d'être banni de **{{server}}** par **{{moderator}}** pour **`{{reason}}`** !",
     "CASE": "Ban | Cas #{{count}}"
 }
