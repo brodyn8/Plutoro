@@ -46,8 +46,8 @@ const init = async () => {
 		client.on(eventName, (...args) => event.run(...args));
 		delete require.cache[require.resolve(`./events/${file}`)];
 	});
-    
-	client.login(process.env.clientToken || client.config.token); // Log in to the discord api
+
+  client.login(process.env.clientToken || client.config.token);
 
 	// connect to mongoose database
 	mongoose.connect(process.env.mongoDB || client.config.mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {

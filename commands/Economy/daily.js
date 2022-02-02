@@ -42,7 +42,7 @@ class Daily extends Command {
 			.setFooter(message.translate("economy/daily:AWARD"), message.author.displayAvatarURL({ size: 512, dynamic: true, format: "png" }))
 			.setColor(data.config.embed.color);
 
-		let won = 10000;
+		let won = 5000;
 
 			embed.addField(message.translate("economy/daily:SALARY"), message.translate("economy/daily:SALARY_CONTENT", {
 				won
