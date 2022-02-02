@@ -234,6 +234,7 @@ module.exports = class {
 
 		try {
 			cmd.run(message, args, data);
+      client.CommandsRan++;
 			if(cmd.help.category === "Moderation" && data.guild.autoDeleteModCommands){
 				message.delete();
 			}

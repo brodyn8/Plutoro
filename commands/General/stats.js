@@ -37,6 +37,10 @@ class Stats extends Command {
 			/*.addField(this.client.customEmojis.voice+" "+message.translate("general/stats:MUSIC_TITLE"), message.translate("general/stats:MUSIC_CONTENT", {
 				count: this.client.voice.connections
 			}))*/
+      .addField(this.client.customEmojis.command+" "+message.translate("general/stats:COMMANDS_TITLE"), message.translate("general/stats:COMMANDS_CONTENT", {
+				count: this.client.CommandsRan,
+        time: message.convertTime(Date.now()+this.client.uptime, "from", true)
+			}))
 			.addField(message.translate("general/stats:CREDITS_TITLE"), message.translate("general/stats:CREDITS_CONTENT", {
 				donators: [ "`Androz#2091` - Framework" ].join("\n")
 			}));

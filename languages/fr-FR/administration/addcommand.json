@@ -4,5 +4,6 @@
     "EXAMPLES": "{{prefix}}addcommand bonjour Bonjour {user}! Comment vas-tu?",
     "MISSING_NAME": "Entrez un nom de commande!",
     "MISSING_ANSWER": "Entrez une réponse à la commande!",
-    "SUCCESS": "Commande **{{prefix}}{{commandName}}** ajoutée!"
+    "SUCCESS": "Commande **{{prefix}}{{commandName}}** ajoutée!",
+    "TOO_MANY": "You already have **10** custom commands!"
 }

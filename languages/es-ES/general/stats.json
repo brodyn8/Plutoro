@@ -10,6 +10,8 @@
     "ONLINE_CONTENT": "Online desde hace `{{time}}`",
     "MUSIC_TITLE": "• __Música__",
     "MUSIC_CONTENT": "Escuchando música en `{{count}}` servidores",
+    "COMMANDS_TITLE": "• __Commands Ran__",
+    "COMMANDS_CONTENT": "`{{count}}`\n*Started:* `{{time}} ago`",
     "CREDITS_TITLE": ":heart: • __Créditos__",
     "CREDITS_CONTENT": "{{donators}}",
     "LINKS_TITLE": "• __Links__",

@@ -48,6 +48,7 @@ class BotClient extends Client {
 		this.queues = new Collection(); // This collection will be used for the music
 		this.states = {}; // Used for the dashboard
 		this.knownGuilds = [];
+    this.CommandsRan = 0;
 
 		this.databaseCache = {};
 		this.databaseCache.users = new Collection();

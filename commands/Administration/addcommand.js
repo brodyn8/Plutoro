@@ -13,7 +13,7 @@ class Addcommand extends Command {
 			botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS" ],
 			nsfw: false,
 			ownerOnly: false,
-			cooldown: 3000
+			cooldown: 10000
 		});
 	}
 
@@ -38,6 +38,10 @@ class Addcommand extends Command {
 		if (!answer) {
 			return message.error("administration/addcommand:MISSING_ANSWER");
 		}
+
+    if(data.guild.customCommands.size > 10){
+      return message.error("administration/addcommand:TOO_MANY")
+    }
 
 		data.guild.customCommands.push({
 			name: name.toLowerCase(),
