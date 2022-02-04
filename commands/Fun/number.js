@@ -11,7 +11,7 @@ class Number extends Command {
 			dirname: __dirname,
 			enabled: true,
 			guildOnly: true,
-			aliases: [],
+			aliases: [ "findnumber" ],
 			memberPermissions: [],
 			botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS" ],
 			nsfw: false,
@@ -68,7 +68,7 @@ class Number extends Command {
 					winner: msg.author.toString()
 				});
 				const userdata = await this.client.findOrCreateMember({ id: msg.author.id, guildID: message.guild.id });
-				userdata.money = userdata.money + 10;
+				userdata.money = userdata.money + 500;
 				userdata.save();
 				collector.stop(msg.author.username);
 			}
