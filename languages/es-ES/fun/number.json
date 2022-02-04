@@ -5,8 +5,8 @@
     "GAME_START": "¡Número elegido, puedes comenzar!",
     "BIG": "My number is **bigger** than `{{number}}`!",
     "SMALL": "My number is **smaller** than `{{number}}`!",
-    "WON": "¡{{winner}} ha ganado 500 créditos!",
+    "WON": "¡**{{winner}}** ha ganado 500 créditos!",
     "DEFEAT": "No one could find the number! It was **{{number}}**!",
-    "GAME_STATS": "🎉 | {{winner}} found the correct number! It was __**{{number}}**__!\n\n**Stats:**\n*-* __**Duration**__: {{time}}\n*-* __**Participants**__: {{participants}} ({{participantCount}})",
+    "GAME_STATS": "🎉 | **{{winner}}** found the correct number! It was __**{{number}}**__!\n\n**Stats:**\n*-* __**Duration**__: {{time}}\n*-* __**Participants**__: {{participants}} ({{participantCount}})",
     "GAME_RUNNING": "¡Ya se está ejecutando un juego en este servidor!"
 }

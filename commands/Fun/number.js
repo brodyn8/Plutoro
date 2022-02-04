@@ -58,14 +58,14 @@ class Number extends Command {
 			if (parsedNumber === number) {
 				const time = this.client.functions.convertTime(message.guild, Date.now()-gameCreatedAt);
 				message.sendT("fun/number:GAME_STATS", {
-					winner: msg.author.toString(),
+					winner: msg.author.username.toString(),
 					number,
 					time,
 					participantCount: participants.length,
 					participants: participants.map(p => `<@${p}>`).join("\n")
 				});
 				message.sendT("fun/number:WON", {
-					winner: msg.author.toString()
+					winner: msg.author.username.toString()
 				});
 				const userdata = await this.client.findOrCreateMember({ id: msg.author.id, guildID: message.guild.id });
 				userdata.money = userdata.money + 500;
