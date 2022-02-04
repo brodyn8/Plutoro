@@ -65,5 +65,6 @@ module.exports = mongoose.model("Guild", new Schema({
 	customCommands: { type: Array, default: [] }, // Custom commands of the guild
 	commands: { type: Array, default: [] }, // Commands logs
 	autoDeleteModCommands: { type: Boolean, default: false }, // Whether to auto delete moderation commands
-	disabledCategories: { type: Array, default: [] } // Disabled categories
+	disabledCategories: { type: Array, default: [] }, // Disabled categories
+  premium: { type: Boolean, default: false }
 }));
