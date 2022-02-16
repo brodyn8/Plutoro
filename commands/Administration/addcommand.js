@@ -2,59 +2,64 @@ const Command = require("../../base/Command.js");
 
 class Addcommand extends Command {
 
-	constructor (client) {
-		super(client, {
-			name: "addcommand",
-			dirname: __dirname,
-			enabled: true,
-			guildOnly: true,
-			aliases: [ "custom-command" ],
-			memberPermissions: [ "MANAGE_GUILD" ],
-			botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS" ],
-			nsfw: false,
-			ownerOnly: false,
-			cooldown: 3000
-		});
-	}
+  constructor(client) {
+    super(client, {
+      name: "addcommand",
+      dirname: __dirname,
+      enabled: true,
+      guildOnly: true,
+      aliases: ["custom-command"],
+      memberPermissions: ["MANAGE_GUILD"],
+      botPermissions: ["SEND_MESSAGES", "EMBED_LINKS"],
+      nsfw: false,
+      ownerOnly: false,
+      cooldown: 3000
+    });
+  }
 
-	async run (message, args, data) {
-        
-		if (!args[0])
-			return message.error("administration/addcommand:MISSING_NAME");
+  async run(message, args, data) {
 
-		const name = args[0].split("\n")[0];
+    if (!args[0])
+      return message.error("administration/addcommand:MISSING_NAME");
 
-		if (
-			this.client.commands.get(name) ||
-            this.client.aliases.get(name) ||
-            data.guild.customCommands.find((c) => c.name === name)
-		) {
-			return message.error(
-				"administration/addcommand:COMMAND_ALREADY_EXISTS"
-			);
-		}
+    const name = args[0].split("\n")[0];
 
-		const answer = (args[0].split("\n")[1] || "") + args.slice(1).join(" ");
-		if (!answer) {
-			return message.error("administration/addcommand:MISSING_ANSWER");
-		}
+    if (
+      this.client.commands.get(name) ||
+      this.client.aliases.get(name) ||
+      data.guild.customCommands.find((c) => c.name === name)
+    ) {
+      return message.error(
+        "administration/addcommand:COMMAND_ALREADY_EXISTS"
+      );
+    }
 
-    if(data.guild.customCommands.length >= 10){
+    const answer = (args[0].split("\n")[1] || "") + args.slice(1).join(" ");
+    if (!answer) {
+      return message.error("administration/addcommand:MISSING_ANSWER");
+    }
+
+    let limit = 7;
+    if (data.guild.premium.enabled) {
+      limit === 15;
+    }
+
+    if (data.guild.customCommands && data.guild.customCommands.length >= limit) {
       return message.error("administration/addcommand:TOO_MANY")
     }
 
-		data.guild.customCommands.push({
-			name: name.toLowerCase(),
-			answer: answer
-		});
-		data.guild.save();
+    data.guild.customCommands.push({
+      name: name.toLowerCase(),
+      answer: answer
+    });
+    data.guild.save();
 
-		message.success("administration/addcommand:SUCCESS", {
-			commandName: name,
-			prefix: data.guild.prefix
-		});
-	}
-    
+    message.success("administration/addcommand:SUCCESS", {
+      commandName: name,
+      prefix: data.guild.prefix
+    });
+  }
+
 }
 
 module.exports = Addcommand;

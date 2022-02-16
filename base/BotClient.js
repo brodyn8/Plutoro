@@ -30,23 +30,24 @@ class BotClient extends Client {
 			],
 			allowedMentions: {
 				parse: ["users"]
-			}
+			},
+      //shards: 'auto'
 		});
-		this.config = require("../config"); // Load the config file
-		this.customEmojis = require("../emojis.json"); // load the bot's emojis
-		this.languages = require("../languages/language-meta.json"); // Load the bot's languages
-		this.commands = new Collection(); // Creates new commands collection
-		this.aliases = new Collection(); // Creates new command aliases collection
-		this.logger = require("../helpers/logger"); // Load the logger file
-		this.wait = util.promisify(setTimeout); // client.wait(1000) - Wait 1 second
-		this.functions = require("../helpers/functions"); // Load the functions file
-		this.guildsData = require("../base/Guild"); // Guild mongoose model
-		this.usersData = require("../base/User"); // User mongoose model
-		this.membersData = require("../base/Member"); // Member mongoose model
-		this.logs = require("../base/Log"); // Log mongoose model
-		this.dashboard = require("../dashboard/app"); // Dashboard app
-		this.queues = new Collection(); // This collection will be used for the music
-		this.states = {}; // Used for the dashboard
+		this.config = require("../config");
+		this.customEmojis = require("../emojis.json");
+		this.languages = require("../languages/language-meta.json");
+		this.commands = new Collection(); 
+		this.aliases = new Collection();
+		this.logger = require("../helpers/logger");
+		this.wait = util.promisify(setTimeout);
+		this.functions = require("../helpers/functions");
+		this.guildsData = require("../base/Guild");
+		this.usersData = require("../base/User");
+		this.membersData = require("../base/Member");
+		this.logs = require("../base/Log");
+		this.dashboard = require("../dashboard/app");
+		this.queues = new Collection();
+		this.states = {};
 		this.knownGuilds = [];
     this.CommandsRan = 0;
 
@@ -55,8 +56,8 @@ class BotClient extends Client {
 		this.databaseCache.guilds = new Collection();
 		this.databaseCache.members = new Collection();
 
-		this.databaseCache.usersReminds = new Collection(); // members with active reminds
-		this.databaseCache.mutedUsers = new Collection(); // members who are currently muted
+		this.databaseCache.usersReminds = new Collection();
+		this.databaseCache.mutedUsers = new Collection();
 
 		if(this.config.apiKeys.amethyste){
 			this.AmeAPI = new AmeClient(this.config.apiKeys.amethyste);
@@ -68,10 +69,7 @@ class BotClient extends Client {
 			});
 		}
 
-		this.player = new Player(this, {
-			leaveOnEmpty: false,
-			enableLive: true
-		});
+		this.player = new Player(this, this.config.opt.discordPlayer);
 		this.player
 			.on("trackStart", (message, track) => {
 				message.success("music/play:NOW_PLAYING", {

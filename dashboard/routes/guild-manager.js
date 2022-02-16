@@ -105,7 +105,7 @@ router.post("/:serverID", CheckAuth, async(req, res) => {
 	if(Object.prototype.hasOwnProperty.call(data, "autoroleEnable") || Object.prototype.hasOwnProperty.call(data, "autoroleUpdate")){
 		const autorole = {
 			enabled: true,
-			role: guild.roles.cache.find((r) => "@"+r.name === data.role)
+			role: guild.roles.cache.find((r) => "@"+r.name === data.role).id
 		};
 		guildData.plugins.autorole = autorole;
 		guildData.markModified("plugins.autorole");

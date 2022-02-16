@@ -6,7 +6,7 @@
     "VOICE_CHANNEL_CONNECT": "Je ne parviens pas à me connecter à votre canal vocal!",
     "MISSING_SONG_NAME": "Veuillez spécifier un nom de chanson ou un lien!",
     "RESULTS_FOOTER": "Veuillez sélectionner une chanson en envoyant un nombre entre 1 et 10.",
-    "NO_RESULT": "Ne peut pas être trouvé sur Youtube!",
+    "NO_RESULT": "Song cannot be found!",
     "NOW_PLAYING": "Lecture en cours **{{songName}}** :musical_note:",
     "PLAYING_PLAYLIST": "Démarrage de la playlist **{{playlistTitle}}**. {{playlistEmoji}}\nJoue la première chanson, **{{songName}}**! :musical_note:",
     "CANCELLED": "Sélection annulée",

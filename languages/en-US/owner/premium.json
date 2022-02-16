@@ -1,0 +1,11 @@
+{
+    "DESCRIPTION": "Update a server's premium!",
+    "USAGE": "{{prefix}}premium [add | remove | check] (guildID)",
+    "EXAMPLES": "{{prefix}}premium [add | remove | check] (guildID)",
+    "MISSING_GUILD": "Please enter a guild ID!",
+    "MISSING_TYPE": "Please enter either `add` or `remove`!",
+    "GUILD_ERROR": "Guild not found!",
+    "ENABLED": "**Premium** successfully added to **{{guildName}}**",
+    "DISABLED": "**Premium** successfully removed from **{{guildName}}**",
+    "CHECK": "**{{guildName}}** has **premium** `{{premiumCheck}}`"
+}
