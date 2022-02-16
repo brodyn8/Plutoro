@@ -51,10 +51,10 @@
 		"offline": "<:offline:934920836589174784>"
 	},
 	"letters": {
-		"a": ":regional_indicator_a:",
-		"w": ":regional_indicator_w:",
-		"r": ":regional_indicator_r:",
-		"d": ":regional_indicator_d:"
+		"a": "<:letter_a:943373401026871367>",
+		"w": "<:letter_w:943373433482383390>",
+		"r": "<:letter_r:943373464612536360>",
+		"d": "<:letter_d:943373501904089088>"
 	},
 	"categories": {
 		"administration": "<:administrator_category:934929070360240168>",
